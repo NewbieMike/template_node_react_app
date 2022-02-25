@@ -7,9 +7,6 @@
     "start": "node server/index.js",
     "build": "cd client && npm install && npm run build"
   },
-  "engines": {
-    "node": "v16.13.2"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
