@@ -38,15 +38,19 @@ class ContactForm extends React.Component {
       // headers: {
       //   "Content-Type": "application/x-www-form-urlencoded",
       // },
-    }).then((response) => {
-      console.log(response);
-      if (response.data.status === "success") {
-        alert("Message Sent.");
-        this.resetForm();
-      } else if (response.data.status === "fail") {
-        alert("Message failed to send.");
-      }
-    });
+    })
+      .then((response) => {
+        console.log(response);
+        if (response.data.status === "success") {
+          alert("Message Sent.");
+          this.resetForm();
+        } else if (response.data.status === "fail") {
+          alert("Message failed to send.");
+        }
+      })
+      .catch((e) => {
+        console.log(e);
+      });
   }
 
   resetForm() {
