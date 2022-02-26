@@ -2,7 +2,7 @@ import React from "react";
 
 const LandingPage = (props) => {
   return (
-    <div className="landing-page-container">
+    <div className="landing-page-container" id="Home">
       <img
         src="https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
         alt=""

@@ -5,10 +5,14 @@ import CookieConsent from "react-cookie-consent";
 // import styles from "./MainLayout.module.scss";
 
 import { Link } from "@material-ui/core";
+import { Footer } from "../Footer/Footer";
+import { Header } from "../Header/Header";
 
 const Component = ({ className, children }) => (
   <div className="">
+    <Header />
     {children}
+    <Footer />
     <CookieConsent
       //degub = true if we develope page, every refresh banner will appear
       debug={false}

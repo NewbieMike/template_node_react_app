@@ -70,7 +70,7 @@ class ContactForm extends React.Component {
       emailTitle,
     } = this.props;
     return (
-      <div className="section-contact">
+      <div className="section-contact" id="Contact">
         <h2 className="title">{this.props.title}</h2>
         <div className="container flex-container">
           <form
