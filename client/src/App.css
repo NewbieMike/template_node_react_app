@@ -42,13 +42,14 @@ h2::after {
   bottom: 0;
   height: 3px;
   width: 150px;
-  background-color: black;
+  background-color: #015958;
   border-radius: 6px;
 }
 h6::after {
   height: 2px;
   left: 50%;
   transform: translateX(-50%);
+  background-color: #015958;
 }
 .container {
   max-width: 1120px;
@@ -64,7 +65,7 @@ h6::after {
   align-items: center;
   justify-content: space-around;
   flex: 1;
-  z-index: 2;
+  z-index: 1000;
 }
 .form-info {
   flex: 1;
@@ -100,7 +101,7 @@ a img {
 }
 
 input {
-  width: 400px;
+  width: 450px;
   height: 40px;
   margin: 5px;
 }
@@ -110,36 +111,71 @@ textarea {
   min-height: 600px;
   max-height: 600px;
 }
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+label {
+  font-size: 26px;
+  font-family: "Playfair Display", serif;
+  margin: 20px 5px;
+  position: relative;
+}
+label::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 3px;
+  width: 150px;
+  background-color: #015958;
+  border-radius: 6px;
+}
 input,
 textarea {
   border: none;
   border-bottom: 2px solid black;
+  position: relative;
+  z-index: 1000;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 .submit {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: white;
   border-radius: 6px;
   padding: 15px 150px;
   margin: 20px;
   font-size: 22px;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
 }
-
+.submit:hover {
+  color: white;
+  background-color: black;
+}
 .section-contact {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
-.section-contact::after {
+.form-info::after {
   content: "";
   z-index: 1;
   position: absolute;
-  right: 0;
-  bottom: 200px;
-  height: 300px;
-  width: 900px;
-  /* transform: rotate(45deg); */
-  background-color: rgba(0, 0, 0, 0.4);
+  right: -150%;
+  bottom: 0;
+  height: 500px;
+  width: 3000px;
+  transform: rotate(-25deg);
+  background-color: #015958;
+  opacity: 0.8;
   border-radius: 6px;
+  z-index: -10;
 }
-.section-contact::before {
+/* .section-contact::before {
   content: "";
   z-index: 1;
   position: absolute;
@@ -147,7 +183,40 @@ textarea {
   bottom: 520px;
   height: 300px;
   width: 500px;
-  /* transform: rotate(45deg); */
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 6px;
+} */
+
+@media (max-width: 1024px) {
+  textarea {
+    max-width: 450px;
+    min-width: 450px;
+    min-height: 400px;
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 425px) {
+  h1,
+  h3 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  input,
+  textarea {
+    width: 300px;
+  }
+  textarea {
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 400px;
+    max-height: 400px;
+  }
 }

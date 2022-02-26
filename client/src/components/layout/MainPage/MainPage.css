@@ -33,7 +33,7 @@
   bottom: 0;
   height: 3px;
   width: 400px;
-  background-color: black;
+  background-color: #015958;
   border-radius: 6px;
 }
 .main-btn {
@@ -45,7 +45,7 @@
   text-decoration: none;
   color: black;
   padding: 30px 150px;
-  border: 2px solid black;
+  border: 2px solid #015958;
   background-color: white;
   border-radius: 26px;
   font-size: 30px;
@@ -53,6 +53,24 @@
 }
 
 .main-btn:hover {
-  background-color: black;
+  background-color: #015958;
   color: white;
+}
+
+@media (max-width: 1440px) {
+  .landing-page-content-container {
+    top: 100px;
+  }
+}
+@media (max-width: 1024px) {
+  .main-btn {
+    padding: 20px 100px;
+  }
+}
+@media (max-width: 1024px) {
+  .main-btn {
+    padding: 10px 80px;
+    font-size: 24px;
+    text-align: center;
+  }
 }

@@ -28,7 +28,7 @@ const MainPage = () => {
         name="Imię"
         email="Email"
         subject="Temat wiadomości"
-        message="Treść wiadomości..."
+        message="Treść wiadomości"
         submit="Wyślij"
         phoneTitle="Zadzwoń do Nas"
         phoneNumber="+48 111 222 333"

@@ -80,33 +80,34 @@ class ContactForm extends React.Component {
             className="form-container"
           >
             <div className="form-group">
-              <div className="row">
-                <div className="col-md-6">
-                  <input
-                    placeholder={name}
-                    id="name"
-                    type="text"
-                    className="form-control"
-                    required
-                    value={this.state.name}
-                    onChange={this.onNameChange.bind(this)}
-                  />
-                </div>
-                <div className="col-md-6">
-                  <input
-                    placeholder={email}
-                    id="email"
-                    type="email"
-                    className="form-control"
-                    aria-describedby="emailHelp"
-                    required
-                    value={this.state.email}
-                    onChange={this.onEmailChange.bind(this)}
-                  />
-                </div>
+              <label>{name}</label>
+              <div className="col-md-6">
+                <input
+                  placeholder={name}
+                  id="name"
+                  type="text"
+                  className="form-control"
+                  required
+                  value={this.state.name}
+                  onChange={this.onNameChange.bind(this)}
+                />
+              </div>
+              <label>{email}</label>
+              <div className="col-md-6">
+                <input
+                  placeholder={email}
+                  id="email"
+                  type="email"
+                  className="form-control"
+                  aria-describedby="emailHelp"
+                  required
+                  value={this.state.email}
+                  onChange={this.onEmailChange.bind(this)}
+                />
               </div>
             </div>
             <div className="form-group">
+              <label>{subject}</label>
               <input
                 placeholder={subject}
                 id="subject"
@@ -118,6 +119,7 @@ class ContactForm extends React.Component {
               />
             </div>
             <div className="form-group">
+              <label>{message}</label>
               <textarea
                 placeholder={message}
                 id="message"
