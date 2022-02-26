@@ -32,7 +32,7 @@ class ContactForm extends React.Component {
 
     axios({
       method: "POST",
-      url: "/send",
+      url: "https://template1232.herokuapp.com/send || https://localhost:3000/send",
       data: data,
       headers: { "content-type": "application/json" },
       // headers: {
