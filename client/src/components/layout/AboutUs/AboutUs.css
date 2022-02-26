@@ -1,0 +1,27 @@
+.about-content {
+  display: flex;
+}
+.about-content p {
+  flex: 1;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 15px;
+}
+.about-content img {
+  flex: 1;
+  width: 400px;
+  height: 400px;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+.about-services {
+  display: flex;
+  margin-top: 20px;
+}
+.service-card {
+  flex: 1;
+  margin: 5px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}

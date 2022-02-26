@@ -5,11 +5,36 @@ body {
   font-family: "Poppins", sans-serif;
 }
 /* font-family: 'Playfair Display', serif; */
+h1,
+h2,
+h3,
+h6 {
+  position: relative;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-variant: small-caps;
+}
+h1,
+h3 {
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+}
+h1 {
+  font-size: 56px;
+}
+h3 {
+  font-size: 38px;
+}
+h6 {
+  font-size: 22px;
+  text-align: center;
+}
 h2 {
   font-size: 40px;
   margin-left: 50px;
   position: relative;
 }
+h6::after,
 h2::after {
   content: "";
   position: absolute;
@@ -20,16 +45,58 @@ h2::after {
   background-color: black;
   border-radius: 6px;
 }
+h6::after {
+  height: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .container {
   max-width: 1120px;
   margin-left: auto;
   margin-right: auto;
+}
+.flex-container {
+  display: flex;
 }
 .form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  flex: 1;
+  z-index: 2;
+}
+.form-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.form-info a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  transition: 0.4s ease-in-out;
+  padding: 2px 5px;
+  border-radius: 6px;
+}
+.form-info a:hover {
+  background-color: black;
+  color: white;
+}
+.form-info a:hover img {
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(156deg)
+    brightness(104%) contrast(104%);
+}
+
+a img {
+  width: 44px;
+  height: 34px;
+  transition: 0.4s ease-in-out;
 }
 
 input {
@@ -49,8 +116,38 @@ textarea {
   border-bottom: 2px solid black;
 }
 .submit {
-  background-color: aquamarine;
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 6px;
   padding: 15px 150px;
   margin: 20px;
+  font-size: 22px;
+}
+
+.section-contact {
+  position: relative;
+  overflow-x: hidden;
+}
+.section-contact::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: 200px;
+  height: 300px;
+  width: 900px;
+  /* transform: rotate(45deg); */
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+}
+.section-contact::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: 520px;
+  height: 300px;
+  width: 500px;
+  /* transform: rotate(45deg); */
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
 }

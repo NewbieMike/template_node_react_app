@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
-
+import phone from "../../../phone.svg";
+import mail from "../../../mail.svg";
 class ContactForm extends React.Component {
   constructor(props) {
     super(props);
@@ -57,11 +58,21 @@ class ContactForm extends React.Component {
     this.setState({ name: "", email: "", subject: "", message: "" });
   }
   render() {
+    const {
+      name,
+      email,
+      subject,
+      message,
+      submit,
+      phoneTitle,
+      phoneNumber,
+      emailAddress,
+      emailTitle,
+    } = this.props;
     return (
-      <div className="section">
-        <h2 className="title">Contact Us</h2>
-        <div className="container">
-          {/* <hr /> */}
+      <div className="section-contact">
+        <h2 className="title">{this.props.title}</h2>
+        <div className="container flex-container">
           <form
             id="contact-form"
             onSubmit={this.submitEmail.bind(this)}
@@ -72,7 +83,7 @@ class ContactForm extends React.Component {
               <div className="row">
                 <div className="col-md-6">
                   <input
-                    placeholder="Name"
+                    placeholder={name}
                     id="name"
                     type="text"
                     className="form-control"
@@ -83,7 +94,7 @@ class ContactForm extends React.Component {
                 </div>
                 <div className="col-md-6">
                   <input
-                    placeholder="Email"
+                    placeholder={email}
                     id="email"
                     type="email"
                     className="form-control"
@@ -97,7 +108,7 @@ class ContactForm extends React.Component {
             </div>
             <div className="form-group">
               <input
-                placeholder="Subject"
+                placeholder={subject}
                 id="subject"
                 type="text"
                 className="form-control"
@@ -108,7 +119,7 @@ class ContactForm extends React.Component {
             </div>
             <div className="form-group">
               <textarea
-                placeholder="Message"
+                placeholder={message}
                 id="message"
                 className="form-control"
                 rows="1"
@@ -118,9 +129,22 @@ class ContactForm extends React.Component {
               />
             </div>
             <button type="submit" className="submit">
-              Submit
+              {submit}
             </button>
           </form>
+          <div className="form-info">
+            <h6>{phoneTitle}</h6>
+            <a href="/">
+              <img src={phone} alt="" />
+              {phoneNumber}
+            </a>
+            <h6>{emailTitle}</h6>
+
+            <a href="/">
+              <img src={mail} alt="" />
+              {emailAddress}
+            </a>
+          </div>
         </div>
       </div>
     );
