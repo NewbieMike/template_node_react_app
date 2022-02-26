@@ -51,4 +51,6 @@ textarea {
 .submit {
   background-color: aquamarine;
   border-radius: 6px;
+  padding: 15px 150px;
+  margin: 20px;
 }
