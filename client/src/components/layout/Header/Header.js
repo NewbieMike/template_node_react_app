@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { HashLink } from "react-router-hash-link";
-import LanguageIcon from "@material-ui/icons/Language";
+// import LanguageIcon from "@material-ui/icons/Language";
 import "./Header.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Component = ({ className }) => {
   return (
@@ -25,11 +25,11 @@ const Component = ({ className }) => {
           Kontakt
         </HashLink>
       </div>
-      <div className="header_column">
+      {/* <div className="header_column">
         <Link to="/UA" className="flag-icon">
           <LanguageIcon /> UA
         </Link>
-      </div>
+      </div> */}
     </nav>
   );
 };

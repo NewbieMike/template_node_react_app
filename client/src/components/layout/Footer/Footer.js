@@ -5,8 +5,8 @@ import { HashLink } from "react-router-hash-link";
 import "./Footer.css";
 
 import FacebookIcon from "@material-ui/icons/Facebook";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import TwitterIcon from "@material-ui/icons/Twitter";
+// import InstagramIcon from "@material-ui/icons/Instagram";
+// import TwitterIcon from "@material-ui/icons/Twitter";
 const Component = ({ className }) => {
   return (
     <div className="container-footer">
@@ -24,7 +24,7 @@ const Component = ({ className }) => {
       </div>
       <div className="column_footer">
         <h3>Kontakt</h3>
-        <p>Cracow, Poland</p>
+        {/* <p>Cracow, Poland</p> */}
         <a href="tel:+123456789">+48 123456789</a>
         <a href="mailto:mail@mail.com">email@email.com</a>
       </div>
@@ -34,12 +34,12 @@ const Component = ({ className }) => {
           <a href="/">
             <FacebookIcon />
           </a>
-          <a href="/">
+          {/* <a href="/">
             <InstagramIcon />
           </a>
           <a href="/">
             <TwitterIcon />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

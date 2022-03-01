@@ -8,14 +8,15 @@ const MainPage = () => {
   return (
     <div>
       <LandingPage
-        title="Pozwolenia na pracę w Polsce"
-        subtitle="Nie zwlekaj i zacznij pracować już dziś"
+        title="Przyjmij pracownika z zagranicy od zaraz!"
+        subtitle="Nie zwlekaj, Ty przyjmiesz ludzi a my zajmiemy się wszystkimi formalnościami."
         button="Zadzwoń już dziś!"
       />
       <AboutUs
-        title="O nas"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae massa erat. Nullam ac tellus erat. Cras eget cursus lacus. Pellentesque ut venenatis dolor. Donec vitae bibendum eros, sit amet lobortis sem. Nam gravida ligula ligula, id cursus neque facilisis nec. Fusce ornare hendrerit aliquam.
-        Donec porta sodales metus sollicitudin placerat. Cras pellentesque ex sit amet sollicitudin consequat. Pellentesque accumsan efficitur ullamcorper. Nam blandit sem ligula, nec dapibus velit viverra nec. In ac finibus urna. Maecenas cursus ac nisi a suscipit. Nullam venenatis faucibus sem, at iaculis lacus efficitur eu. Etiam nec vestibulum mauris, sit amet dignissim turpis. Nam at lacus in eros ornare vestibulum at id erat. Donec ullamcorper volutpat augue, sed porta leo bibendum in."
+        title="O usłudze"
+        text="Legalizacją pracy cudzoziemców zajmujemy się już od wielu lat. W ostatnich latach, wraz z wzmożoną aktywnością imigracyjną zdobyliśmy szerokie kompetencje i doświadczenie w tym zakresie. Jako firma, zajmujemy się nie tylko zalegalizowaniem pobytu pracownika ale w miarę potrzeby również następczą obsługą kadrowo-płacową i wsparciem na każdy etapie pobytu danej osoby w Polsce. Możemy wesprzeć Państwa przedsiębiorstwo szczególnie w dobie obecnego kryzysu i zapewnić pewne i rzetelne usługi w zakresie legalizacji pobytu pracowników ze wschodu."
+        text2="Jesteśmy na rynku od 25 lat, aktywnie wspieramy naszych klientów w sprawach pracowniczych."
+        text3="Zapraszamy do kontaktu."
         serviceTitle1=" Usługa I"
         serviceTitle2=" Usługa II"
         serviceTitle3=" Usługa III"
